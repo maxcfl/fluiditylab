@@ -1,0 +1,475 @@
+.listing
+{
+  background-color: #fff;
+  font: 8px verdana;
+  border-bottom: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  margin: 0px auto;
+  width: 45em;
+}
+
+.heading
+{
+  font-weight: bold;
+  overflow: hidden;
+  border-top: 1px solid #bbb;
+}
+
+.item, .purchased-item
+{
+  overflow: hidden;
+  border-top: 1px solid #bbb;
+}
+
+.purchased-item
+{
+  background-repeat: no-repeat;
+  background-image: url(../labyrinth/image/corner.jpg);
+}
+
+.asin
+{
+  width: 24em;
+  line-height: auto;
+  float: left;
+  border-left: 1px solid #bbb;
+  padding: 2px;
+}
+
+.maker
+{
+  width: 12em;
+  float: left;
+  border-left: 1px solid #bbb;
+  padding: 2px;
+}
+
+.price
+{
+  width: 5em;
+  float: left;
+  border-left: 1px solid #bbb;
+  padding: 2px;
+}
+
+.clip
+{
+  overflow: hidden;
+}
+
+.asin .clip
+{
+  width: 24em;
+}
+
+.maker .clip
+{
+  width: 12em;
+}
+
+.price .clip
+{
+  width: 5em;
+}
+  
+.holder 
+{
+  width: 7in;
+}
+
+a:hover img
+{
+  border:1px solid #008;
+}
+
+img
+{
+  float: right;
+  margin-top: 0em;
+  margin-left: 9px;
+  border:1px solid #fff;
+}
+
+a 
+{
+  font-weight: bold;
+}
+
+a:link
+{
+  color: #000;
+  background-color:#fff;
+  text-decoration: underline;
+}
+
+.holder a
+{
+  font-weight: normal;
+  color: #000;
+  text-decoration: none;
+}
+
+.thumb {
+  float:left;
+  width:125px;
+  height:225px;
+  margin:.5em;
+}
+
+.thumb p {
+  text-align:center;
+}
+
+.figure 
+{
+  text-align:center;
+  margin-right:1em;
+  margin-left:1em;
+}
+
+.figure img 
+{
+  float:none;
+  padding: 5px;
+  margin: 1em;
+  border: 1px solid #888;
+}
+
+.figure p 
+{
+  font-weight: bold; 
+  margin: 0em;
+}
+
+.floating
+{  
+  text-align:center;
+  padding: 5px;
+  margin:1em;
+}
+
+.floating img 
+{
+  float:none;
+}
+
+.floating p 
+{
+  font-weight: bold; 
+  margin: 0em;
+}
+
+body
+{
+  margin: 0px;
+  padding: 0px;
+  color: #000;
+  background-color: #fff;
+  font-family: "Georgia", "Palatino Linotype", "Times New Roman", serif;
+  font-size: small;
+}
+
+#content
+{
+  position: relative;
+  left: 50%;
+  width: 50em;
+  margin-top: 3em;
+  margin-left: -26em;
+  margin-bottom: 3em;
+  text-align: left;
+  padding: 0em;
+  border: 0px solid #333;
+  color: #000;
+  background-color: #fff;
+}
+
+#masthead
+{
+  display: none;
+}
+
+#fullpage
+{
+  line-height: 1.4em;
+}
+
+#mainbody
+{
+  line-height: 1.4em;
+  float: left;
+  width: 100%;
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-bottom: 2em;
+  border: 0px solid black;
+}
+
+.entry
+{
+  page-break-after: always;
+}
+
+#menu
+{
+  display: none;
+}
+
+#topics
+{
+  display: none;
+}
+
+#logo
+{
+  display: none;
+}
+
+#logo a 
+{
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.title
+{
+  line-height: 1.25em;
+}
+
+.indented
+{
+  margin-left: 2em;
+}
+
+blockquote
+{
+  margin-left:2em;
+  margin-right:1em;
+}
+
+h2
+{
+  margin-top: .25em;
+  padding: 0;
+  font-size: 200%;
+}
+
+h3
+{
+  margin: 0;
+  padding: 0;
+  font-size: 180%;
+}
+
+h4
+{
+  margin-top: .5em;
+  margin-bottom: .5em;
+  padding: 0;
+  font-size: 120%;
+}
+
+h5
+{
+  margin-top: .5em;
+  margin-bottom: .5em;
+  padding: 0;
+  font-size: 90%;
+}
+
+.terms 
+{
+  border:1px solid black;
+  padding:.5em;
+}
+
+.terms td 
+{
+  vertical-align: top;
+}
+
+.lyrics 
+{
+  line-height: 1.2em;
+  font-family:"Palatino Linotype", serif;
+  text-align: center;
+  padding-left: 1em;
+}
+
+.auto-break
+{
+  page-break-before: auto;
+}
+
+.dateheader 
+{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.dateheader a 
+{
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.dateheader a:link 
+{
+  text-decoration: none;
+}
+
+.dateheader a:visited 
+{
+  text-decoration: none;
+}
+
+.dateheader a:hover span 
+{
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.firstletter
+{
+  padding-bottom: .3em;
+  padding-top: .3em;
+  text-align: center;
+  text-decoration: none;
+  margin-left: .25em;
+  margin-right: .25em;
+  font-size: 500%;
+  font-family: "Times New Roman", serif;
+  font-weight: normal;
+  float: left;
+}
+
+.form
+{
+  display: none;
+}
+
+.center 
+{
+  text-align: center;
+}
+
+.fleuron
+{
+  display: none;
+}
+
+.bar 
+{
+  display: block;
+}
+
+.hr 
+{
+  width: .75em;
+  height: .75em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: #333;
+  color: white;
+}
+
+hr 
+{
+  display: none;
+}
+
+code 
+{
+  font-size: 120%;
+  font-weight: normal;
+  font-family: monospace;
+  line-height: 1.2em;
+}
+
+pre
+{
+  padding: 1em;
+  border: 1px solid black;
+}
+
+.xml 
+{
+  font-size: 120%;
+  font-weight: normal;
+  font-family: monospace;
+  line-height: 1.2em;
+  margin-left: 2em;
+}
+
+dd 
+{
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-left: 2em;
+}
+
+.table-of-contents ul
+{
+  list-style: none;
+  margin: 0;
+}
+
+.table-of-contents ol
+{
+  margin: 3em;
+}
+
+.roman-list li
+{
+  margin-left: 1em;
+  margin-right: 2em;
+  list-style-type: decimal;
+}
+
+.iuncturae
+{
+  page-break-after: always;
+}
+
+.iunctura
+{
+  margin-bottom: 3em;
+  font-size: 120%;
+}
+
+.iunctura .desc
+{
+  padding-top: .5em;
+  padding-left: 1em;
+  font-size: 8pt;
+}
+
+.compact
+{
+  font: 6pt verdana;
+  border: 1px solid #ccc; 
+  border-collapse: collapse;
+  margin: 0pt auto;
+  width: 4in;
+}
+
+.compact thead
+{
+  font-weight: bold;
+}
+
+.compact a
+{
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.nb
+{
+  display: none;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>fluidity lab :: labyrinth generator</title>
+	<link rel="shortcut icon" type="image/ico" href="./media/favicon.ico">
+    <link rel="stylesheet" href="./labyrinth/style/page.css" media="screen"/>
+    <link rel="stylesheet" href="./labyrinth/style/print.css" media="print"/>
+    <style type="text/css">
+      .cell
+      {
+          float: left;
+          border-right: 1px solid transparent;
+          border-bottom: 1px solid transparent;
+          margin-right: -1px;
+          margin-bottom: -1px;
+          background: url(./labyrinth/image/breadcrumb.png) no-repeat -10px;
+      }
+      .left { border-left: 1px solid #000000; }
+      .right { border-right: 1px solid #000000; }
+      .top { border-top: 1px solid #000000; }
+      .bottom { border-bottom: 1px solid #000000; }
+      .noleft { border-left: 1px solid transparent; }
+      .noright { border-right: 1px solid transparent; }
+      .notop { border-top: 1px solid transparent; }
+      .nobottom { border-bottom: 1px solid transparent; }
+      .mrow
+      {
+          float: left;
+      }
+      #box
+      {
+          margin: 0px auto 30px;
+          overflow: hidden;
+          padding-bottom: 1px;
+          background-color: #fff;
+          visibility: hidden;
+      }
+      @media screen
+      {
+          #details
+          {
+            margin: 1.5em .75em .5em;
+            padding: 1em;
+            border: 1px solid #ddd;
+            background-color: #fff;
+          }
+          #mazeform
+          {
+            padding: .5em;
+            margin: auto;
+            border: 1px solid #ddd;
+            background-color: #f4f4f4;
+          }
+          input
+          {
+            padding: 0 20px 0 0;
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+          }
+      }
+      @media print
+      {
+          #details { display: none; }
+      }
+      .cell {height: 10px;} 
+      .cell {width:  10px;} 
+    </style>
+    <script src="./labyrinth/script/labyrinthmaze.js"></script>
+    <script src="./labyrinth/script/labyrinthsolve.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="details">
+        <h4 style="margin-bottom: 1em;"><a href="labyrinth-generator.html">maze labyrinth generator (Eller's algorithm)</a></h4>
+        <form id="mazeform" action="javascript:">
+          <table width="45%" align="left">
+            <tbody>
+              <tr>
+                <td>rows:</td>
+                <td><input style="width: 60px;" value="50" name="y" type="text" /></td>                
+              </tr>
+              <tr>
+                <td>columns:</td>
+                <td><input style="width: 60px;" value="80" name="x" type="text" /></td>
+              </tr>
+              <tr>
+                <td>cell size:</td>
+                <td><input style="width: 60px;" value="8" name="s" type="text" /></td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%">
+            <tbody>
+              <td><label>anfractuosity: </label>
+                <input id="n2" value="lo" name="anfr" checked="checked" type="radio" /><label for="n2">low</label>
+                <input id="n1" value="hi" name="anfr" type="radio" /><label for="n1">high</label>
+              </td>
+            </tbody>
+          </table>
+          <div>  
+            <button name="bld" onclick="build()" disabled="disabled">generate</button>
+            <button name="slv" onclick="solve()" disabled="disabled">solve</button>
+          </div>
+        </form>
+      </div>
+      <div id="progress" style="display:none;">
+        <div id="labels" style="text-align:center;margin:3em auto 0em;font-weight:bold;font-size:16px">
+          <span name="label" id="initializing">initialize</span> &rarr;
+          <span name="label" id="generating">generate</span> &rarr;
+          <span name="label" id="rendering">render</span> &rarr;
+          <span name="label" id="display">display</span>
+        </div>
+        <div id="progbar" style="padding:1px;margin:1em auto;background-color:transparent;border:1px solid black;height:10px;width:100%;">
+          <div id="bar" style="background-color:#18416A;height:10px;width:0px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="box"></div>
+  </body>
+</html>
